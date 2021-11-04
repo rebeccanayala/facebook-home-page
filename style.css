@@ -23,6 +23,7 @@ body, input, button {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
+    gap: 40px;
 }
 
 .intro {
@@ -141,3 +142,27 @@ p > a {
 p > a:hover {
     text-decoration: underline;
 }
+
+@media (max-widht:900 pax) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        margin: -28px auto;
+    }
+    
+    .intro {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    form {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    }
